@@ -3,9 +3,7 @@ import fs from 'fs';
 let name = "parkjunhyeong";
 let date = new Date();
 let year = date.getFullYear();
-let month = date.getMonth();
-let day = date.getDay();
-let fileName = year += month += day + name;
+let fileName = year + name;
 console.log(fileName);
 
 fs.writeFileSync("./" + fileName + ".txt", name);
